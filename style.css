@@ -1,0 +1,208 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    background-color: #111827;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    height: 50px;
+    border-radius: 10px;
+  }
+  
+  .nav-links ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  /* Navbar styling */
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+}
+
+.nav-links ul li a:hover {
+  background-color: #2563eb;
+}
+
+.nav-links ul li a.active {
+  background-color: #2563eb; /* Example of active link background */
+  color: #fff; /* Example of active link text color */
+}
+  
+  /* Section styling */
+  .container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    border: 2px solid #e5e7eb;
+  }
+  
+  h1, h2 {
+    color: #111827;
+    margin-bottom: 1rem;
+  }
+  
+  .profile img {
+    max-width: 200px;
+    border-radius: 16px;
+    margin-top: 1rem;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  }
+  
+  /* About & Skills */
+  #skills img,
+  #about img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  #skills ul, #education ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+  }
+  
+  #skills li, #education li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Contact Info */
+  .contact-info p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .icons img {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Form styling */
+  form {
+    margin-top: 1.5rem;
+  }
+  
+  fieldset {
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    background-color: #fefefe;
+  }
+  
+  label {
+    display: block;
+    margin: 0.8rem 0 0.2rem;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    outline: none;
+  }
+  
+  input[type="submit"],
+  input[type="reset"] {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color: #1d4ed8;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #111827;
+    color: white;
+    margin-top: 3rem;
+    border-top: 3px solid #2563eb;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .profile img {
+      max-width: 100%;
+    }
+  
+    .container {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+  
+    input[type="submit"],
+    input[type="reset"] {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  
